@@ -21,9 +21,10 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- discourse
 - visual and textual reasoning
 - explainable AI 
+- anaphora and coreference resolution, discourse in general
+- reading comprehension
 
 education:
   courses:
