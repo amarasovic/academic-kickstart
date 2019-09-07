@@ -35,7 +35,7 @@ education:
     institution: University of Zagreb
     year: 2015
   - course: BSc in Mathematics
-    institution: Unviersity of Zagre
+    institution: Unviersity of Zagreb
     year: 2013
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
