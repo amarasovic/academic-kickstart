@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Postdoc
 
 # Organizations/Affiliations
 organizations:
 - name: Allen Institute for Artificial Intelligence (AI2)
-  url: ""
+  url: "https://allenai.org/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
