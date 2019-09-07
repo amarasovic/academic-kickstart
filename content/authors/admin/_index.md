@@ -65,9 +65,9 @@ email: ""
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
 I am a postdoc at the [Allen Institute of Artificial Intelligence (AI2)](https://allenai.org/). For my PhD thesis, I have studied deep learning for NLP tasks with limited labeled data such as [fine-grained opinion analysis](https://www.aclweb.org/anthology/N18-1054/) and [anaphora resolution beyond entity anaphora](https://www.aclweb.org/anthology/D17-1021/). I'm still striving to gain a better understanding of what does it take to make deep learning efficient, robust, and reliable. I also like to communicate research on NLP and machine learning to a wider audience.
