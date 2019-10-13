@@ -9,6 +9,6 @@ view: 2
 
 # Optional header image (relative to `static/img/` folder).
 header:
-  caption: "NLP's generalization problem, and how researchers are tackling it"
+  caption: ""
   image: ""
 ---
