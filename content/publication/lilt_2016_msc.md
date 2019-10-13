@@ -16,45 +16,14 @@ authors = ["Ana Marasović", "Mengfei Zou", "Alexis Palmer", "Anette Frank"]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["1"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "In *LiLT*"
 publication_short = "In *LiLT*"
 
 # Abstract and optional shortened version.
-abstract = "
-OPEN JOURNAL SYSTEMS
-Journal Help
-USER
-Username	
-Password	
- Remember me
-NOTIFICATIONS
-View
-Subscribe
-JOURNAL CONTENT
-Search Scope
-
-
-Browse
-By Issue
-By Author
-By Title
-FONT SIZE
-Make font size smallerMake font size defaultMake font size larger
-INFORMATION
-For Readers
-For Authors
-For Librarians
-HOME ABOUT LOGIN SEARCH CURRENT ARCHIVES ANNOUNCEMENTS EDITORIAL BOARD
-Home > Vol 14 (2016) > Marasović
-MODAL SENSE CLASSIFICATION AT LARGE. PARAPHRASE-DRIVEN SENSE PROJECTION, SEMANTICALLY ENRICHED CLASSIFICATION MODELS AND CROSS-GENRE EVALUATIONS
-Ana Marasović, Mengfei Zou, Alexis Palmer, Anette Frank
-
-ABSTRACT
-
-Modal verbs have different interpretations depending on their context. Their sense categories – epistemic, deontic and dynamic – provide important dimensions of meaning for the interpretation of discourse.
+abstract = "Modal verbs have different interpretations depending on their context. Their sense categories – epistemic, deontic and dynamic – provide important dimensions of meaning for the interpretation of discourse.
 
 Previous work on modal sense classification achieved relatively high performance using shallow lexical and syntactic features drawn from small-size annotated corpora. Due to the restricted empirical basis, it is difficult to assess the particular difficulties of modal sense classification and the generalization capacity of the proposed models.
 
