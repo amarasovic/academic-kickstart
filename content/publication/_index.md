@@ -13,6 +13,3 @@ header:
   caption: ""
   image: ""
 ---
-
-[[item]] title = "Neural Networks and Deep Learning"
-
