@@ -18,12 +18,12 @@ organizations:
   url: "https://allenai.org/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests visual and textual reasoning.
+#bio: My research interests is visual and textual reasoning.
 
 interests:
 - visual and textual reasoning
 - explainable AI 
-- anaphora and coreference resolution, discourse in general
+- anaphora and coreference resolution 
 - reading comprehension
 
 education:
@@ -56,9 +56,9 @@ social:
   link: https://github.com/amarasovic
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
-# - icon: cv
-#   icon_pack: ai
-#   link: files/my_cv.pdf
+- icon: cv
+   icon_pack: ai
+   link: files/my_cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
