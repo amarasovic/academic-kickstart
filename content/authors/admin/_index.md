@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Postdoc
+#role: Postdoc
 
 # Organizations/Affiliations
-organizations:
-- name: Allen Institute for Artificial Intelligence (AI2)
-  url: "https://allenai.org/"
+#organizations:
+#- name: Allen Institute for Artificial Intelligence (AI2)
+#  url: "https://allenai.org/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests is visual and textual reasoning.
