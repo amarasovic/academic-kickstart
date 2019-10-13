@@ -18,7 +18,7 @@ organizations:
   url: "https://allenai.org/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests visual and textual reasoning.
 
 interests:
 - visual and textual reasoning
@@ -70,4 +70,4 @@ email: ""
 #- Visitors
 ---
 
-I am a postdoc at the [Allen Institute of Artificial Intelligence (AI2)](https://allenai.org/). For my PhD thesis, I have studied deep learning for NLP tasks with limited labeled data such as [fine-grained opinion analysis](https://www.aclweb.org/anthology/N18-1054/) and [anaphora resolution beyond entity anaphora](https://www.aclweb.org/anthology/D17-1021/). I'm still striving to gain a better understanding of what does it take to make deep learning efficient, robust, and reliable. I also like to communicate research on NLP and machine learning to a wider audience.
+I am a postdoc at the [Allen Institute of Artificial Intelligence (AI2)](https://allenai.org/) / [AlleNLP Team](https://allennlp.org). I am interested in models that provide readable and faithful explanations of their classification decisions—focusing, focusing for now on [visual commonsense reasoning](https://visualcommonsense.com/). For my PhD thesis, I have studied deep learning for NLP tasks with limited labeled data such as [fine-grained opinion analysis](https://www.aclweb.org/anthology/N18-1054/) and [anaphora resolution beyond entity anaphora](https://www.aclweb.org/anthology/D17-1021/). 
