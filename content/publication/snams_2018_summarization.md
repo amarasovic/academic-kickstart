@@ -16,32 +16,14 @@ authors = ["Markus Zopf", "Teresa Botschen", "Tobias Falke", "Benjamin Heinzerli
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
 publication = "In *SNAMS*"
 publication_short = "In *SNAMS*"
 
 # Abstract and optional shortened version.
-abstract = "—Automatic text summarization aims at reducing the
-length of input documents while preserving the most important
-information. A key challenge in automatic summarization is
-therefore to estimate the importance of information. Most extractive summarization systems, however, usually only consider
-bigrams as the representation from which importance can be
-estimated. The potential of other text annotations such as
-frames or named-entities remains unexplored. In this paper, we
-evaluate the application potential of linguistic annotations for
-automatic text summarization. To this end, we extend a previously
-presented summarization system by replacing bigrams with a
-multitude of different linguistic annotation types, including ngrams, verb stems, frames, concepts, chunks, connotation frames,
-entity types, and discourse relation sense-types. We propose two
-novel evaluation methods to evaluate information importance
-detection capabilities. In our experiments, bigrams show the best
-overall performance when source document sentences have to
-be ranked. These results support the decision of summarization
-system developers to use bigrams in summarization systems.
-However, other annotation types perform better if the model
-has to distinguish between source and reference sentences."
+abstract = "—Automatic text summarization aims at reducing the length of input documents while preserving the most important information. A key challenge in automatic summarization is therefore to estimate the importance of information. Most extractive summarization systems, however, usually only consider bigrams as the representation from which importance can be estimated. The potential of other text annotations such as frames or named-entities remains unexplored. In this paper, we evaluate the application potential of linguistic annotations for automatic text summarization. To this end, we extend a previously presented summarization system by replacing bigrams with a multitude of different linguistic annotation types, including ngrams, verb stems, frames, concepts, chunks, connotation frames, entity types, and discourse relation sense-types. We propose two novel evaluation methods to evaluate information importance detection capabilities. In our experiments, bigrams show the best overall performance when source document sentences have to be ranked. These results support the decision of summarization system developers to use bigrams in summarization systems. However, other annotation types perform better if the model has to distinguish between source and reference sentences."
 
 #abstract_short = "A short version of the abstract."
 
