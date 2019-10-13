@@ -30,7 +30,7 @@ abstract = "Machine comprehension of texts longer than a single sentence often r
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
