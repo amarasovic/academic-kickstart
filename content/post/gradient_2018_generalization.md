@@ -9,4 +9,4 @@ tags = [
 ]
 +++
 
-[NLP’s generalization problem, and how researchers are tackling it](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing/).
+Check the post on the [Gradient](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing/).
