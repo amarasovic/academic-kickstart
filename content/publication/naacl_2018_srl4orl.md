@@ -5,7 +5,7 @@ title = "SRL4ORL: Improving Opinion Role Labelling using Multi-task Learning wit
 date = "2018-06-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Ana Marasović", "Anette Frank"]
+authors = ["**Ana Marasović**", "Anette Frank"]
 
 # Publication type.
 # Legend:
