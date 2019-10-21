@@ -5,7 +5,7 @@ title = "A Mention-Ranking Model for Abstract Anaphora Resolution"
 date = "2017-09-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Ana Marasović", "Leo Born", "Juri Opitz", "Anette Frank"]
+authors = ["**Ana Marasović**", "Leo Born", "Juri Opitz", "Anette Frank"]
 
 # Publication type.
 # Legend:
