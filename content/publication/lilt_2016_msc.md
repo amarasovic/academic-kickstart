@@ -5,7 +5,7 @@ title = "Modal Sense Classification At Large. Paraphrase-Driven Sense Projection
 date = "2016-09-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Ana Marasović", "Mengfei Zou", "Alexis Palmer", "Anette Frank"]
+authors = ["**Ana Marasović**", "Mengfei Zou", "Alexis Palmer", "Anette Frank"]
 
 # Publication type.
 # Legend:
