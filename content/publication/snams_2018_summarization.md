@@ -5,7 +5,7 @@ title = "What's Important in a Text? An Extensive Evaluation of Linguistic Annot
 date = "2018-10-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Markus Zopf", "Teresa Botschen", "Tobias Falke", "Benjamin Heinzerling", "Ana Marasović", "Todor Mihaylov", "Avinesh PVS", "Eneldo Mencia Loza", "Johannes Fuernkranz", "Anette Frank"]
+authors = ["Markus Zopf", "Teresa Botschen", "Tobias Falke", "Benjamin Heinzerling", "**Ana Marasović**", "Todor Mihaylov", "Avinesh PVS", "Eneldo Mencia Loza", "Johannes Fuernkranz", "Anette Frank"]
 
 # Publication type.
 # Legend:
