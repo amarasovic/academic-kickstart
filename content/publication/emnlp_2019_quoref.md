@@ -5,7 +5,7 @@ title = "Quoref: A Reading Comprehension Dataset with Questions Requiring Corefe
 date = "2019-05-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Pradeep Dasigi", "Nelson F. Liu", "Ana Marasović", "Noah A. Smith", "Matt Gardner"]
+authors = ["Pradeep Dasigi", "Nelson F. Liu", "**Ana Marasović**", "Noah A. Smith", "Matt Gardner"]
 
 # Publication type.
 # Legend:
