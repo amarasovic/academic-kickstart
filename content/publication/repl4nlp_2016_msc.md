@@ -5,7 +5,7 @@ title = "Multilingual Modal Sense Classification using a Convolutional Neural Ne
 date = "2016-08-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Ana Marasović", "Anette Frank"]
+authors = ["**Ana Marasović**", "Anette Frank"]
 
 # Publication type.
 # Legend:
