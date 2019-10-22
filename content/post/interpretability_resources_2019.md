@@ -1,7 +1,7 @@
 +++
 title = "Collection of itnerpretability resources"
 description = "" 
-date = "201-10-21"
+date = "2019-10-21"
 categories = [ "NLP", "explainable AI" ]
 tags = [
     "NLP",
