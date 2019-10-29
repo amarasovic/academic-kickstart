@@ -1,5 +1,5 @@
 +++
-title = "I released a collection of itnerpretability resources"
+title = "I released a collection of interpretability resources"
 description = "" 
 date = "2019-10-21"
 +++
