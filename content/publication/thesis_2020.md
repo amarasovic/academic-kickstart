@@ -19,7 +19,7 @@ authors = ["Marasović Ana"]
 publication_types = ["0"]
 
 # Publication name and optional abbreviated version.
-#publication = "In *SNAMS*"
+publication = "Thesis"
 #publication_short = "In *SNAMS*"
 
 # Abstract and optional shortened version.
