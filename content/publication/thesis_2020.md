@@ -2,7 +2,7 @@
 title = "Deep Learning With Sentiment Inference For Discourse-Oriented Opinion Analysis"
 
 # Date first published.
-date = "2018-11-31"
+date = "2018-11-30"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Ana Marasović"]
