@@ -51,7 +51,7 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
 
-$$Q\_{h,l}=Z\_{l-1}$
+$Q\_{h,l}=Z\_{l-1}$
 
 $Q\_{h,l}=Z\_{l-1} W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_{q}} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
         
