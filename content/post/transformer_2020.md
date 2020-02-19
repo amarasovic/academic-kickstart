@@ -26,15 +26,15 @@ $$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  \tex
 
 $$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{value weight matrices}$$ 
 
-$$W_l^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ...  feedforward layer's weight matrix$$
+$$W_{l}^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ...  feedforward layer's weight matrix$$
 
-$$b_l^{ffnn} \in \mathbb{R}^{1 \times d_{ffnn}} = \mathbb{R}^{1 \times 3072} ...  feedforward layer's bias vector$$
+$$b_{l}^{ffnn} \in \mathbb{R}^{1 \times d_{ffnn}} = \mathbb{R}^{1 \times 3072} ...  feedforward layer's bias vector$$
 
-$$W_l^{out} \in \mathbb{R}^{d_{ffnn} \times d} = \mathbb{R}^{3072 \times 768} ...  output layer's weight matrix$$ 
+$$W_{l}^{out} \in \mathbb{R}^{d_{ffnn} \times d} = \mathbb{R}^{3072 \times 768} ...  output layer's weight matrix$$ 
 
-$$&b_l^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ...  output layer's bias vector$$
+$$b_{l}^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ...  output layer's bias vector$$
 
-$$&W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} ... final layer's weight matrix
+$$W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} ... final layer's weight matrix
 $$
 
 $$I=(i_1,\hdots,i_{512}) \in \mathbb{N}_0^{1 \times \text{max input length}} = \mathbb{N}_0^{1 \times 512} ...  input vocab indices$$
