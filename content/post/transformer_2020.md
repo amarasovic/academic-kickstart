@@ -9,7 +9,8 @@ tags = [
 ]
 +++
 
-You can downlaod a pdf version of the following text by <a href="BERT_base_Transformer.pdf" download>clicking here</a>.
+You can downlaod a pdf version of the following text by <a id="raw-url" href="https://github.com/amarasovic/academic-kickstart/raw/master/content/post/BERT_base_Transformer.pdf">clicking here</a>.
+
 
 &nbsp;
 
