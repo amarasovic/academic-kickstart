@@ -36,7 +36,7 @@ $$b_{l}^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ... \text{
 $$W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} ... \text{final layer's weight matrix}
 $$
 
-$I=i_{1},...,$
+$I=i_{1},...,i\sb{512}$
 
 $$I=(i_{1},...,i_{512}) \in \mathbb{N}^{1 \times \text{max input length}} = \mathbb{N}^{1 \times 512} ... \text{input vocab indices}$$
 
