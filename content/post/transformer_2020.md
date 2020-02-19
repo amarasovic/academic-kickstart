@@ -17,7 +17,7 @@ $$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times
 
 $$h \in \\{1,...,n\_{heads}\\}, n_{heads}=12$$
 
-$$l \in \\{1,...,12\\}, n_{layers}=12$$
+$$l \in \\{1,...,n\_{layers}\\}, n_{layers}=12$$
 
 $$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{query weight matrices}$$
 
