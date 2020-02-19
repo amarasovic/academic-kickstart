@@ -11,6 +11,8 @@ tags = [
 
 A pdf version of the following text can be found [here](BERT_base_Transformer.pdf).
 
+&nbsp;
+
 ## Initialize
 
 &nbsp;
