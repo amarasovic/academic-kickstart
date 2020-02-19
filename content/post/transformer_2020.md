@@ -11,6 +11,8 @@ tags = [
 
 ## Initialize
 
+&nbsp;
+
 $W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} ... \text{token embeddings}$ 
 
 $W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ... \text{positional embeddings}$
@@ -47,6 +49,8 @@ $Z_0=X$
 &nbsp;
 
 ## Forward algorithm
+
+&nbsp;
 
 For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
