@@ -51,29 +51,27 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
 
-$Q\_{h,l}=Z\_{l-1}$
-
 $Q\_{h,l}=Z\_{l-1} W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_{q}} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
         
-$$K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} ... \text{key matrix}$$
+$K\_{h,l}=Z\_{l-1} W_\{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} ... \text{key matrix}$
         
-$$V_{h,l}=Z_{l-1}W_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} ... \text{value matrix}$$
+$V\_{h,l}=Z\_{l-1} W\_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} ... \text{value matrix}$
         
-$$A_{h,l} = \texttt{Softmax}(\frac{Q_{h,l}K_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}$$
+$A\_{h,l} = \texttt{Softmax}(\frac{Q\_{h,l}K\_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}$
         
-$$Z_{h,l} = A_{h,l}V_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}$$
+$Z\_{h,l} = A\_{h,l}V\_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}$$
        
 
     
-$$\tilde{Z}_l = \texttt{concat}(Z_{1,l}, \hdots,Z_{n_{\text{heads}},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n_{\text{heads}})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}$$
+$\tilde{Z}_l = \texttt{concat}(Z\_{1,l},...,Z\_{n\_{heads},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n\_{heads})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}$
     
-$$\bar{Z_l} = \texttt{LayerNorm}(X+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}$$
+$\bar{Z_l} = \texttt{LayerNorm}(X+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}$
     
-$$Z_l^{ffnn}=\max(0, \bar{Z_l}W_l^{ffnn}+b_l^{ffnn}) \in \mathbb{R}^{\text{max input len} \times d_{ffnn}} = \mathbb{R}^{512 \times 3072}$$
+$Z\_l^{ffnn}=\max(0, \bar{Z_l}W\_l^{ffnn}+b_l^{ffnn}) \in \mathbb{R}^{\text{max input len} \times d\_{ffnn}} = \mathbb{R}^{512 \times 3072}$
     
-$$Z_l^{out} = Z_l^{ffnn}W_l^{out} + b_l^{out} \in  \mathbb{R}^{\text{max input len} \times d} = \mathbb{R}^{512 \times 768}$$
+$Z\_l^{out} = Z\_l^{ffnn}W_l^{out} + b_l^{out} \in  \mathbb{R}^{\text{max input len} \times d} = \mathbb{R}^{512 \times 768}$
     
-$$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$$
+$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$
 
 
 Pass $\text{tanh}(W^{final}Z\_{n\_{layers}}[0,:])$ to the final $\texttt{Softmax}$ that predicts the class, where $Z\_{n\_{layers}}[0,:]$ is the hidden state corresponding to the first token.
