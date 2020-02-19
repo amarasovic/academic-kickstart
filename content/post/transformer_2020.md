@@ -56,7 +56,7 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Q\_{h,l}=Z\_{l-1} W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_{q}} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Q\_{h,l}=Z\_{l-1} W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
         
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$K\_{h,l}=Z\_{l-1} W_\{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} ... \text{key matrix}$
         
