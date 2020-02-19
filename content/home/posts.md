@@ -10,13 +10,6 @@ weight = 60  # Order that this section will appear.
 title = "Posts"
 subtitle = ""
 
-[advanced]
- # Custom CSS.
- css_style = "my_theme"
-
- # CSS class.
- css_class = "my_theme"
-
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
@@ -67,8 +60,8 @@ subtitle = ""
   
 [advanced]
  # Custom CSS. 
- css_style = ""
+ css_style = "my_theme"
  
  # CSS class.
- css_class = ""
+ css_class = "my_theme"
 +++
