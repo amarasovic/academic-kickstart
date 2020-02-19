@@ -48,8 +48,11 @@ $$Z_0=X$$
 __Forward algorithmm:__
 
 \begin{algorithm}[H]
+
 \SetAlgoLined
-  \For{$l=1;\ l \leq n\_{layers}=12;\ l++$}{
+
+\For{$l=1;\ l \leq n\_{layers}=12;\ l++$}{
+
        \For{$h=1;\ h \leq n\_{heads}=12;\ h++$}{
        
         $$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}$$
@@ -63,13 +66,17 @@ __Forward algorithmm:__
         $$Z_{h,l} = A_{h,l}V_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}$$
        }
     \vspace{-0.5cm}
-    \begin{align*}
-    &\tilde{Z}_l = \texttt{concat}(Z_{1,l}, \hdots,Z_{n_{\text{heads}},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n_{\text{heads}})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}\\
-    &\bar{Z_l} = \texttt{LayerNorm}(X+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}\\
-    &Z_l^{ffnn}=\max(0, \bar{Z_l}W_l^{ffnn}+b_l^{ffnn}) \in \mathbb{R}^{\text{max input len} \times d_{ffnn}} = \mathbb{R}^{512 \times 3072}\\
-    &Z_l^{out} = Z_l^{ffnn}W_l^{out} + b_l^{out} \in  \mathbb{R}^{\text{max input len} \times d} = \mathbb{R}^{512 \times 768}\\
-    &Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}\\
-    \end{align*}
+    
+    $$\tilde{Z}_l = \texttt{concat}(Z_{1,l}, \hdots,Z_{n_{\text{heads}},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n_{\text{heads}})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}$$
+    
+    $$\bar{Z_l} = \texttt{LayerNorm}(X+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}$$
+    
+    $$Z_l^{ffnn}=\max(0, \bar{Z_l}W_l^{ffnn}+b_l^{ffnn}) \in \mathbb{R}^{\text{max input len} \times d_{ffnn}} = \mathbb{R}^{512 \times 3072}$$
+    
+    $$Z_l^{out} = Z_l^{ffnn}W_l^{out} + b_l^{out} \in  \mathbb{R}^{\text{max input len} \times d} = \mathbb{R}^{512 \times 768}$$
+    
+    $$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$$
+
     \vspace{-1cm}
  }
 \end{algorithm}
