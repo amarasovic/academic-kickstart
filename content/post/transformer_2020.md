@@ -9,27 +9,10 @@ tags = [
 ]
 +++
 
-\documentclass[12pt]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage[vlined]{algorithm2e}
-\pagenumbering{gobble}
-\SetKwFor{For}{for (}{) $\lbrace$}{$\rbrace$}
+__Initialize:__
 
-\title{BERT-Base Transformer Forward Pass}
-\author{Ana Marasovi\'c}
-\date{}
-
-\begin{document}
-
-\maketitle
-
-\begin{align*}
-&\text{Initialize:}\\
-&\\
-&W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} \hdots  \text{token embeddings}\\ 
+$$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} \hdots  \text{token embeddings}$$ 
 &W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{positional embeddings}\\
 &h \in \{1, \hdots, n_{\text{heads}}\}, l \in \{1, \hdots, n_{\text{layers}}\}, n_{\text{heads}}=12, n_{\text{layers}}=12\\
 &W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} \hdots  \text{query \textit{weight} matrices}\\ 
@@ -44,7 +27,7 @@ tags = [
 &T=\texttt{lookup}(W_T,I) \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{input token embeddings}\\
 &X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{input embeddings}\\
 &Z_0=X\\
-\end{align*}
+
 
 \pagebreak 
 \noindent Forward algorithmm: \\
@@ -75,4 +58,4 @@ tags = [
 \end{algorithm}
 
 \noindent Pass $\text{tanh}(W^{final}Z_{n_{\text{layers}}}[0,:])$ to the final \texttt{Softmax} that predicts the class, where $Z_{n_{\text{layers}}}[0,:]$ is the hidden state corresponding to the first token.
-\end{document}
+
