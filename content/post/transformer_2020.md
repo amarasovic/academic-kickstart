@@ -44,8 +44,11 @@ $X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{51
 
 $Z_0=X$
 
+\_ 
 
-## Forward algorithmm:
+&nbsp;
+
+## Forward algorithmm
 
 For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
