@@ -9,7 +9,7 @@ tags = [
 ]
 +++
 
-A pdf version of the following text can be found [here](BERT_base_Transformer.pdf).
+You can downlaod a pdf version of the following text by <a href="BERT_base_Transformer.pdf" download>clicking here</a>.
 
 &nbsp;
 
