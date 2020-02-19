@@ -60,8 +60,8 @@ subtitle = ""
   
 [advanced]
  # Custom CSS. 
- css_style = "my_theme"
+ css_style = ""
  
  # CSS class.
- css_class = "my_theme"
+ css_class = ""
 +++
