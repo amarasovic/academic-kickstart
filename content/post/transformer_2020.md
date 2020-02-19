@@ -47,13 +47,8 @@ $$Z_0=X$$
 
 __Forward algorithmm:__
 
-\begin{algorithm}[H]
-
-\SetAlgoLined
-
-\For{$l=1;\ l \leq n\_{layers}=12;\ l++$}{
-
-       \For{$h=1;\ h \leq n\_{heads}=12;\ h++$}{
+For $l \in \\{1,...,n\_{layers}\\}, n_{layers}=12$:
+For $h \in \\{1,...,n\_{heads}\\}, n_{heads}=12$: 
        
         $$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}$$
         
@@ -64,8 +59,8 @@ __Forward algorithmm:__
         $$A_{h,l} = \texttt{Softmax}(\frac{Q_{h,l}K_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}$$
         
         $$Z_{h,l} = A_{h,l}V_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}$$
-       }
-    \vspace{-0.5cm}
+       
+
     
     $$\tilde{Z}_l = \texttt{concat}(Z_{1,l}, \hdots,Z_{n_{\text{heads}},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n_{\text{heads}})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}$$
     
@@ -77,9 +72,6 @@ __Forward algorithmm:__
     
     $$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$$
 
-    \vspace{-1cm}
- }
-\end{algorithm}
 
-Pass $\text{tanh}(W^{final}Z_{n_{\text{layers}}}[0,:])$ to the final \texttt{Softmax} that predicts the class, where $Z_{n_{\text{layers}}}[0,:]$ is the hidden state corresponding to the first token.
+Pass $\text{tanh}(W^{final}Z\_{n\_{layers}}[0,:])$ to the final $\texttt{Softmax}$ that predicts the class, where $Z\_{n\_{layers}}[0,:]$ is the hidden state corresponding to the first token.
 
