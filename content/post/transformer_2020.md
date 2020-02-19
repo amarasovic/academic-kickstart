@@ -7,6 +7,7 @@ tags = [
     "NLP",
     "Transformer"
 ]
+font_size = "s"
 +++
 
 You can downlaod a pdf version of the following text by <a id="raw-url" href="https://github.com/amarasovic/academic-kickstart/raw/master/content/post/BERT_base_Transformer.pdf">clicking here</a>.
