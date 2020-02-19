@@ -32,9 +32,9 @@ $$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \tex
 
 $$W_{l}^f \in \mathbb{R}^{d \times d_f} = \mathbb{R}^{768 \times 3072} ... \text{feedforward layer's weight matrix}$$
 
-$$b_{l}^{f \in \mathbb{R}^{1 \times d_f} = \mathbb{R}^{1 \times 3072} ... \text{feedforward layer's bias vector}$$
+$$b_{l}^f \in \mathbb{R}^{1 \times d_f} = \mathbb{R}^{1 \times 3072} ... \text{feedforward layer's bias vector}$$
 
-$$W_{l}^{out} \in \mathbb{R}^{d_{ffnn} \times d} = \mathbb{R}^{3072 \times 768} ... \text{output layer's weight matrix}$$ 
+$$W_{l}^{out} \in \mathbb{R}^{d_f \times d} = \mathbb{R}^{3072 \times 768} ... \text{output layer's weight matrix}$$ 
 
 $$b_{l}^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ... \text{output layer's bias vector}$$
 
