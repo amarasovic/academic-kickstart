@@ -9,6 +9,10 @@ tags = [
 ]
 +++
 
+---
+header-includes:
+  - \usepackage{algorithm2e}
+---
 
 __Initialize:__
 
@@ -46,8 +50,7 @@ $$X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{5
 $$Z_0=X$$
 
 
-\pagebreak 
-\noindent Forward algorithmm: \\
+__Forward algorithmm:__
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -74,5 +77,5 @@ $$Z_0=X$$
  }
 \end{algorithm}
 
-\noindent Pass $\text{tanh}(W^{final}Z_{n_{\text{layers}}}[0,:])$ to the final \texttt{Softmax} that predicts the class, where $Z_{n_{\text{layers}}}[0,:]$ is the hidden state corresponding to the first token.
+Pass $\text{tanh}(W^{final}Z_{n_{\text{layers}}}[0,:])$ to the final \texttt{Softmax} that predicts the class, where $Z_{n_{\text{layers}}}[0,:]$ is the hidden state corresponding to the first token.
 
