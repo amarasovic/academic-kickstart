@@ -41,7 +41,7 @@ $$b_{l}^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ... \text{
 $$W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} ... \text{final layer's weight matrix}
 $$
 
-$$I=(i_1,...,i_{512}) \in \mathbb{N}_0^{1 \times \text{max input length}} = \mathbb{N}_0^{1 \times 512} ... \text{input vocab indices}$$
+$$I=(i_1,...,i_{512}) \in \mathbb{N}^{1 \times \text{max input length}} = \mathbb{N}^{1 \times 512} ... \text{input vocab indices}$$
 
 $$T=\texttt{lookup}(W_T,I) \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ... \text{input token embeddings}$$
 
