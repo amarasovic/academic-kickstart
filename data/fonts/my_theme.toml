@@ -3,7 +3,7 @@ name = "my_theme"
 
 # Optional Google font URL
 #google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono"
-google_fonts = Zilla+Slab
+google_fonts = "Zilla+Slab"
 
 # Font families
 heading_font = "Zilla+Slab"
