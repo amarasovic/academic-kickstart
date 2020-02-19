@@ -7,12 +7,6 @@ tags = [
     "NLP",
     "Transformer"
 ]
-[advanced]
- # Custom CSS. 
- css_style = "my_theme"
- 
- # CSS class.
- css_class = "my_theme"
 +++
 
 You can downlaod a pdf version of the following text by <a id="raw-url" href="https://github.com/amarasovic/academic-kickstart/raw/master/content/post/BERT_base_Transformer.pdf">clicking here</a>.

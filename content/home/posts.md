@@ -9,7 +9,13 @@ weight = 60  # Order that this section will appear.
 
 title = "Posts"
 subtitle = ""
-font_size = "s"
+
+[advanced]
+ # Custom CSS.
+ css_style = "my_theme"
+
+ # CSS class.
+ css_class = "my_theme"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
