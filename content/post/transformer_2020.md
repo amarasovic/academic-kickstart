@@ -9,6 +9,8 @@ tags = [
 ]
 +++
 
+A pdf version of the following text can be found [here](BERT_base_Transformer.pdf).
+
 ## Initialize
 
 &nbsp;
@@ -76,6 +78,7 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$
 
+&nbsp;
 
 Pass $\text{tanh}(W^{final}Z\_{n\_{layers}}[0,:])$ to the final $\texttt{Softmax}$ that predicts the class, where $Z\_{n\_{layers}}[0,:]$ is the hidden state corresponding to the first token.
 
