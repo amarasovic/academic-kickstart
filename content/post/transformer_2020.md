@@ -12,23 +12,36 @@ tags = [
 
 __Initialize:__
 
-$$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} ...  \text{token embeddings}$$ 
+$$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} ...  token embeddings$$ 
 
-$$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ...  \text{positional embeddings}$$
+$$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ...  positional embeddings$$
 
-&h \in \{1, \hdots, n_{\text{heads}}\}, l \in \{1, \hdots, n_{\text{layers}}\}, n_{\text{heads}}=12, n_{\text{layers}}=12\\
-&W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} \hdots  \text{query \textit{weight} matrices}\\ 
-&W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} \hdots  \text{key \textit{weight} matrices} \\ 
-&W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} \hdots  \text{value \textit{weight} matrices}\\ 
-&W_l^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} \hdots  \text{feedforward layer's weight matrix}\\
-&b_l^{ffnn} \in \mathbb{R}^{1 \times d_{ffnn}} = \mathbb{R}^{1 \times 3072} \hdots  \text{feedforward layer's bias vector}\\
-&W_l^{out} \in \mathbb{R}^{d_{ffnn} \times d} = \mathbb{R}^{3072 \times 768} \hdots  \text{output layer's weight matrix} \\ 
-&b_l^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} \hdots  \text{output layer's bias vector} \\ &W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} \hdots \text{final layer's weight matrix}
-&\\
-&I=(i_1,\hdots,i_{512}) \in \mathbb{N}_0^{1 \times \text{max input length}} = \mathbb{N}_0^{1 \times 512} \hdots  \text{input vocab indices}\\
-&T=\texttt{lookup}(W_T,I) \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{input token embeddings}\\
-&X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{input embeddings}\\
-&Z_0=X\\
+$$h \in \{1, \hdots, n_{\text{heads}}\}, l \in \{1,..., n_{\text{layers}}\}, n_{\text{heads}}=12, n_{\text{layers}}=12$$
+
+$$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  query \textit{weight} matrices$$
+
+$$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  key \textit{weight} matrices$$
+
+$$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  value \textit{weight} matrices$$ 
+
+$$W_l^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ...  feedforward layer's weight matrix$$
+
+$$b_l^{ffnn} \in \mathbb{R}^{1 \times d_{ffnn}} = \mathbb{R}^{1 \times 3072} ...  feedforward layer's bias vector$$
+
+$$W_l^{out} \in \mathbb{R}^{d_{ffnn} \times d} = \mathbb{R}^{3072 \times 768} ...  output layer's weight matrix$$ 
+
+$$&b_l^{out} \in \mathbb{R}^{1 \times d} = \mathbb{R}^{1 \times 768} ...  output layer's bias vector$$
+
+$$&W^{final} \in \mathbb{R}^{d \times d} = \mathbb{R}^{768 \times 768} ... final layer's weight matrix
+$$
+
+$$I=(i_1,\hdots,i_{512}) \in \mathbb{N}_0^{1 \times \text{max input length}} = \mathbb{N}_0^{1 \times 512} ...  input vocab indices$$
+
+$$T=\texttt{lookup}(W_T,I) \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ...  input token embeddings$$
+
+$$X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ...  input embeddings$$
+
+$$Z_0=X$$
 
 
 \pagebreak 
