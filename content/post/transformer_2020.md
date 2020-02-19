@@ -20,11 +20,11 @@ $$h \in {1,..., n_{\text{heads}}}, n_{\text{heads}}=12$$
 
 $$l \in {1,..., n_{\text{layers}}},n_{\text{layers}}=12$$
 
-$$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  query \textit{weight} matrices$$
+$$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{query \textit{weight} matrices}$$
 
-$$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  key \textit{weight} matrices$$
+$$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  \text{key \textit{weight} matrices}$$
 
-$$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  value \textit{weight} matrices$$ 
+$$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{value \textit{weight} matrices}$$ 
 
 $$W_l^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ...  feedforward layer's weight matrix$$
 
