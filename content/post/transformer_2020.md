@@ -51,11 +51,11 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
        
-$$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}$$
+$$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$$
         
-$$K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} \hdots \text{key matrix}$$
+$$K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} ... \text{key matrix}$$
         
-$$V_{h,l}=Z_{l-1}W_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} \hdots \text{value matrix}$$
+$$V_{h,l}=Z_{l-1}W_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} ... \text{value matrix}$$
         
 $$A_{h,l} = \texttt{Softmax}(\frac{Q_{h,l}K_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}$$
         
