@@ -16,7 +16,7 @@ $$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size
 
 $$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ... \text{positional embeddings}$$
 
-$$h \in \\{1,...,12\\}, n_{heads}=12$$
+$$h \in \\{1,...,n_{heads}\\}, n_{heads}=12$$
 
 $$l \in {1,..., n_{layers}}, n_{layers}=12$$
 
