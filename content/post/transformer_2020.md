@@ -50,8 +50,10 @@ __Forward algorithmm:__
 For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
-       
-$Q_{h,l}=Z\_{l-1}W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_{q}} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
+
+$$Q_{h,l}=Z\_{l-1} W\_{h,l}^{Q}$
+
+$Q_{h,l}=Z\_{l-1} W\_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_{q}} = \mathbb{R}^{512 \times 64} ... \text{query matrix}$
         
 $$K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} ... \text{key matrix}$$
         
