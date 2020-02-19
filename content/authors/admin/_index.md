@@ -20,7 +20,7 @@ superuser: true
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests is visual and textual reasoning.
 
-interests:
+news:
 - My PhD thesis is finally [online](http://archiv.ub.uni-heidelberg.de/volltextserver/27699/)
 - I released a collection of interpretability resources. [Click here](https://github.com/amarasovic/interpretability-literature/)
 
