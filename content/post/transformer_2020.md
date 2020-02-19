@@ -30,7 +30,7 @@ $$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  \tex
 
 $$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{value weight matrices}$$ 
 
-$$W_{l}^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ... \text{feedforward layer's weight matrix}$$
+$$W_{l}^f \in \mathbb{R}^{d \times d_f} = \mathbb{R}^{768 \times 3072} ... \text{feedforward layer's weight matrix}$$
 
 $$b_{l}^{ffnn} \in \mathbb{R}^{1 \times d_{ffnn}} = \mathbb{R}^{1 \times 3072} ... \text{feedforward layer's bias vector}$$
 
