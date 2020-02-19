@@ -53,7 +53,7 @@ $Z_0=X$
 
 &nbsp;
 
-## Forward algorithm
+## Forward algorithm (one step)
 
 &nbsp;
 
