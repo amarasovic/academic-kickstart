@@ -49,16 +49,18 @@ __Forward algorithmm:__
 
 \begin{algorithm}[H]
 \SetAlgoLined
-  \For{$l=1;\ l \leq n_{\text{layers}}=12;\ l++$}{
-       \For{$h=1;\ h \leq n_{\text{heads}}=12;\ h++$}{
-        \begin{align*}
-        &Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}\\
-        &K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} \hdots \text{key matrix}\\
-        &V_{h,l}=Z_{l-1}W_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} \hdots \text{value matrix}\\
-        &A_{h,l} = \texttt{Softmax}(\frac{Q_{h,l}K_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}\\
-        &Z_{h,l} = A_{h,l}V_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}
-        \end{align*}
-        \vspace{-0.5cm}
+  \For{$l=1;\ l \leq n\_{layers}=12;\ l++$}{
+       \For{$h=1;\ h \leq n\_{heads}=12;\ h++$}{
+       
+        $$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}$$
+        
+        $$K_{h,l}=Z_{l-1}W_{h,l}^{K} \in \mathbb{R}^{\text{max input len} \times d_k} = \mathbb{R}^{512 \times 64} \hdots \text{key matrix}$$
+        
+        $$V_{h,l}=Z_{l-1}W_{h,l}^{V} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64} \hdots \text{value matrix}$$
+        
+        $$A_{h,l} = \texttt{Softmax}(\frac{Q_{h,l}K_{h,l}^T}{\sqrt{d_k}}) \in \mathbb{R}^{\text{max input len} \times \text{max input len}} = \mathbb{R}^{512 \times 512}$$
+        
+        $$Z_{h,l} = A_{h,l}V_{h,l} \in \mathbb{R}^{\text{max input len} \times d_v} = \mathbb{R}^{512 \times 64}$$
        }
     \vspace{-0.5cm}
     \begin{align*}
