@@ -47,9 +47,9 @@ $$Z_0=X$$
 
 __Forward algorithmm:__
 
-For $l \in \\{1,...,n\_{layers}\\}, n_{layers}=12$:
+For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
-For $h \in \\{1,...,n\_{heads}\\}, n_{heads}=12$: 
+For $h \in \\{1,...,n\_{heads}\\}, n\_{heads}=12$: 
        
 $$Q_{h,l}=Z_{l-1}W_{h,l}^{Q} \in \mathbb{R}^{\text{max input len} \times d_q} = \mathbb{R}^{512 \times 64} \hdots \text{query matrix}$$
         
