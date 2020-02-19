@@ -1,5 +1,5 @@
 +++
-title = "BERT-base Transformer Forward Pass"
+title = "BERT-base Transformer forward pass"
 description = "Simple"
 date = "2020-02-19"
 categories = [ "NLP", "Transfomer" ]
