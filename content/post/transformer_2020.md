@@ -16,15 +16,15 @@ $$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size
 
 $$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ... \text{positional embeddings}$$
 
-$$h \in {1,..., n_{\text{heads}}}, n_{\text{heads}}=12$$
+$$h \in {1,..., n_{heads}}, n_{heads}=12$$
 
-$$l \in {1,..., n_{\text{layers}}},n_{\text{layers}}=12$$
+$$l \in {1,..., n_{layers}},n_{layers}=12$$
 
-$$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{query *weight* matrices}$$
+$$W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{query weight matrices}$$
 
-$$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  \text{key *weight* matrices}$$
+$$W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} ...  \text{key weight matrices}$$
 
-$$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{value *weight* matrices}$$ 
+$$W_{h,l}^V \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} ...  \text{value weight matrices}$$ 
 
 $$W_l^{ffnn} \in \mathbb{R}^{d \times d_{ffnn}} = \mathbb{R}^{768 \times 3072} ...  feedforward layer's weight matrix$$
 
