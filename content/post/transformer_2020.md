@@ -44,8 +44,6 @@ $X = T + W_P  \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{51
 
 $Z_0=X$
 
-\_ 
-
 &nbsp;
 
 ## Forward algorithmm
