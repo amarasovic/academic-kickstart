@@ -10,3 +10,5 @@ heading_font = "Zilla+Slab"
 body_font = "Zilla+Slab"
 nav_font = "Zilla+Slab"
 mono_font = "Zilla+Slab"
+
+font_size = "12"
