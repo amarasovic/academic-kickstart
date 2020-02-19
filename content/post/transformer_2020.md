@@ -12,8 +12,10 @@ tags = [
 
 __Initialize:__
 
-$$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} \hdots  \text{token embeddings}$$ 
-&W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} \hdots  \text{positional embeddings}\\
+$$W_T \in \mathbb{R}^{\text{vocab size} \times d} = \mathbb{R}^{\text{vocab size} \times 768} ...  \text{token embeddings}$$ 
+
+$$W_P \in \mathbb{R}^{\text{max input length} \times d} = \mathbb{R}^{512 \times 768} ...  \text{positional embeddings}$$
+
 &h \in \{1, \hdots, n_{\text{heads}}\}, l \in \{1, \hdots, n_{\text{layers}}\}, n_{\text{heads}}=12, n_{\text{layers}}=12\\
 &W_{h,l}^Q \in \mathbb{R}^{d \times d_q} = \mathbb{R}^{768 \times 64} \hdots  \text{query \textit{weight} matrices}\\ 
 &W_{h,l}^K \in \mathbb{R}^{d \times d_k} = \mathbb{R}^{768 \times 64} \hdots  \text{key \textit{weight} matrices} \\ 
