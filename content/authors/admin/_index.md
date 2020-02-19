@@ -20,11 +20,11 @@ superuser: true
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests is visual and textual reasoning.
 
-interests:
-- visual and textual reasoning
-- explainable AI 
-- anaphora and coreference resolution 
-- reading comprehension
+#interests:
+#- visual and textual reasoning
+#- explainable AI 
+#- anaphora and coreference resolution 
+#- reading comprehension
 
 education:
   courses:
@@ -70,4 +70,4 @@ email: ""
 #- Visitors
 ---
 
-I am a postdoc at the [AllenNLP team](https://allennlp.org) at the [Allen Institute of AI (AI2)](https://allenai.org/) and the [University of Washington](https://www.cs.washington.edu/) working with [Noah Smith](https://homes.cs.washington.edu/~nasmith/) and [Yejin Choi](https://homes.cs.washington.edu/~yejin/). I am interested in models that provide readable and faithful explanations of their classification decisions—focusing for now on [visual commonsense reasoning](https://visualcommonsense.com/). For my PhD thesis, I have studied deep learning for NLP tasks with limited labeled data such as [fine-grained opinion analysis](https://www.aclweb.org/anthology/N18-1054/) and [anaphora resolution beyond entity anaphora](https://www.aclweb.org/anthology/D17-1021/). 
+I am a postdoc at the [AllenNLP team](https://allennlp.org) at the [Allen Institute of AI (AI2)](https://allenai.org/) and the [University of Washington](https://www.cs.washington.edu/) working with [Noah Smith](https://homes.cs.washington.edu/~nasmith/) and [Yejin Choi](https://homes.cs.washington.edu/~yejin/). At the moment I am working on models that provide readable explanations of their classification decisions—focusing for now on [visual commonsense reasoning](https://visualcommonsense.com/). For my PhD thesis, I have studied deep learning for NLP tasks with limited labeled data such as [fine-grained opinion analysis](https://www.aclweb.org/anthology/N18-1054/) and [anaphora resolution beyond entity anaphora](https://www.aclweb.org/anthology/D17-1021/). 
