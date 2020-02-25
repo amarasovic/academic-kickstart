@@ -73,13 +73,13 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\tilde{Z}_l = \texttt{concat}(Z\_{1,l},...,Z\_{n\_{heads},l}) \in \mathbb{R}^{\text{max input len} \times (d_v \cdot n\_{heads})} = \mathbb{R}^{512 \times (64 \cdot 12)} = \mathbb{R}^{512 \times 768}$
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\bar{Z_l} = \texttt{LayerNorm}(X+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\bar{Z_l} = \texttt{LayerNorm}(Z\_{l-1}+\tilde{Z_l}) \in \mathbb{R}^{512 \times 768}$
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Z\_l^{ffnn}=\max(0, \bar{Z_l}W\_l^{ffnn}+b_l^{ffnn}) \in \mathbb{R}^{\text{max input len} \times d\_{ffnn}} = \mathbb{R}^{512 \times 3072}$
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Z\_l^{out} = Z\_l^{ffnn}W_l^{out} + b_l^{out} \in  \mathbb{R}^{\text{max input len} \times d} = \mathbb{R}^{512 \times 768}$
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Z_l = \texttt{LayerNorm}(X+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$Z_l = \texttt{LayerNorm}(\bar{Z_l}+Z_l^{out}) \in \mathbb{R}^{512 \times 768}$
 
 &nbsp;
 
