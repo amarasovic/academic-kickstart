@@ -85,3 +85,6 @@ For $l \in \\{1,...,n\_{layers}\\}, n\_{layers}=12$:
 
 Pass $\text{tanh}(W^{final}Z\_{n\_{layers}}[0,:])$ to the final $\texttt{Softmax}$ that predicts the class, where $Z\_{n\_{layers}}[0,:]$ is the hidden state corresponding to the first token.
 
+## Acknowledgements
+
+Thanks to Andriy Mulyar for pointing out a mistake in the layer normalization in the initial version of this post. 
