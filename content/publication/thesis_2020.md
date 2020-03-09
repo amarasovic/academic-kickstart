@@ -23,7 +23,7 @@ publication = "Thesis"
 #publication_short = "In *SNAMS*"
 
 # Abstract and optional shortened version.
-abstract = "..."
+abstract = "My PhD thesis."
 
 #abstract_short = "A short version of the abstract."
 
