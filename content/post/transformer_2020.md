@@ -2,7 +2,6 @@
 title = "BERT-base Transformer forward pass"
 description = "Simple"
 date = "2020-02-19"
-font_size = "s"
 categories = [ "NLP", "Transfomer" ]
 tags = [
     "NLP",
