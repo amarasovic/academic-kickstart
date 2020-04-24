@@ -1,5 +1,5 @@
 +++
-title = "Guest Lecture at Univeristy of Washington: Methods for analyzing (current) NLP models"
+title = "Guest lecture at Univeristy of Washington: Methods for analyzing (current) NLP models"
 description = "Simple"
 date = "2020-03-09"
 categories = [ "Guest lecturre" ]
