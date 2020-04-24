@@ -1,4 +1,6 @@
 ---
+title: Talks
+
 # View.
 #   1 = List
 #   2 = Compact
